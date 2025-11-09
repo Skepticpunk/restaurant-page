@@ -1,0 +1,10 @@
+html {
+  background-color: antiquewhite; }
+header {
+  display: flex;
+  margin: 0 15vw 0 15vw;
+  justify-content: center; }
+button {
+  color: antiquewhite;
+  background-color: maroon;
+  border: 1px solid goldenrod; }
