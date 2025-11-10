@@ -1,5 +1,5 @@
-import Page from "./load-page.js"
 import pageImage from "./mans-life.jpg"
+import { Page } from "./load-page.js"
 
 const mainPage = new Page()
 

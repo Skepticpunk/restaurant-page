@@ -32,6 +32,7 @@ class Page {
     this.#pageImageFrame.id = "pageImage"
     this.#caption.id = "caption" } }
 
+export { Page };
 
 
 
