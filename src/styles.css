@@ -8,6 +8,7 @@ nav {
   justify-content: center; }
 button {
   flex: 1;
+  font-size: 24px;
   color: antiquewhite;
   background-color: maroon;
   border: solid goldenrod;
