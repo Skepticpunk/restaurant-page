@@ -1,7 +1,7 @@
 class Page {
   #pageContent = document.querySelector("#content")
   #pageHeader = document.createElement("div")
-  #pageBody = document.createElement("p")
+  #pageBody = document.createElement("div")
   #pageImageFrame = document.createElement("div")  
   #header = document.createElement("h1")
   #image = document.createElement("img")
@@ -9,13 +9,14 @@ class Page {
   
   constructor() {
     this.#header.innerHTML = "No page header set - use Page.setHeader()!"
-    this.#pageBody.textContent = "No page body set - use Page.setBody()!"
     this.#caption.textContent = "No caption set - use Page.setCaption()!" }
 
   setHeader( newHeader ) {
     this.#header.innerHTML = newHeader }
-  setBody( newBody ) {
-    this.#pageBody.textContent = newBody }
+  addLine( newLine ) {
+    const line = document.createElement("p")
+    line.textContent = newLine
+    this.#pageBody.append( line ) }
   setImage( newImage ) {
     this.#image.src = newImage }
   setCaption( newCaption ) {
