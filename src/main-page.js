@@ -9,3 +9,5 @@ mainPage.addLine( "Here at the Folsom Bar & Grill, we actually give a shit about
 mainPage.setCaption( "One of the many fine publications that customers enjoy at the Folsom Bar & Grill." )
 
 mainPage.buildPage( document.querySelector( "#content" ) )
+
+export { mainPage };

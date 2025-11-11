@@ -8,3 +8,5 @@ blogPage.addLine( "Finally finished setting this page up. Maybe I'll set up a pr
 blogPage.setCaption( "First Google Image Search result for 'neocities'." )
 
 blogPage.buildPage( document.querySelector( "#content" ) )
+
+export { blogPage };
