@@ -1,5 +1,4 @@
 class Page {
-  #pageContent = document.querySelector("#content")
   #pageHeader = document.createElement("div")
   #pageBody = document.createElement("div")
   #pageImageFrame = document.createElement("div")  
