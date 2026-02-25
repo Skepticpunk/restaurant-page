@@ -10,16 +10,16 @@ class Page {
     this.#header.innerHTML = "No page header set - use Page.setHeader()!"
     this.#caption.textContent = "No caption set - use Page.setCaption()!" }
 
-  setHeader( newHeader ) {
+  set header( newHeader ) {
     this.#header.innerHTML = newHeader }
+  set image( newImage ) {
+    this.#image.src = newImage }
+  set caption( newCaption ) {
+    this.#caption.textContent = newCaption }
   addLine( newLine ) {
     const line = document.createElement("p")
     line.textContent = newLine
     this.#pageBody.append( line ) }
-  setImage( newImage ) {
-    this.#image.src = newImage }
-  setCaption( newCaption ) {
-    this.#caption.textContent = newCaption }
   buildPage( parent ) {
     parent.append( this.#pageHeader )
     parent.append( this.#pageBody )
